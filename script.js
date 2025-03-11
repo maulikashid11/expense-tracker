@@ -1,4 +1,3 @@
-console.log('javascript')
 const inputName = document.querySelector('#name');
 const inputCategory = document.querySelector('#category');
 const categoryTable = document.querySelector('#category-table')
@@ -25,7 +24,6 @@ addBtn.addEventListener('click', (e) => {
     e.preventDefault()
     if (expense.name != '' && expense.category != '' && expense.amount != null) {
         allExpenses.push({...expense,id:crypto.randomUUID()});
-        console.log(allExpenses)
         inputName.value = ''
         inputCategory.value = ''
         inputAmount.value = ''
